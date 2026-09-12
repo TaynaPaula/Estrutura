@@ -1,10 +1,11 @@
 package model.estrutura;
-/*append: adiciona um novo elemento após o último adicionado;
+/*APPEND: adiciona um novo elemento após o último adicionado;
  GETLAST: retorna a referência do último elemento adicionado;
  REMOVE: remove um elemento; tem uma sobrecarga de métodos na qual
  um dos métodos pode remover qualquer elemento e outro remove
  sempre o último adicionado;
  total: um contador de elementos adicionados.*/
+ 
 import java.lang.Exception;
 import model.estrutura.No;
 public class CircularDupla <T> {
