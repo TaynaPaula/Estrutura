@@ -57,17 +57,21 @@ public class CircularDupla <T> {
     {
         remove( getLast() );
     }
-    public int total() {
-        if (this.ultimo_elemento == null)
-            return 0;
-        No<T> buffer = this.ultimo_elemento;
-        int total_elementos = 0;
-        do{
-            total_elementos++;
-            buffer = buffer.getProximo();
-        } while( buffer != this.ultimo_elemento );
-        return total_elementos;
+     public int getTotalNos() {//
+        return this.totalNos;
     }
+    
+    //public int total() {
+    //    if (this.ultimo_elemento == null)
+    //        return 0;
+    //    No<T> buffer = this.ultimo_elemento;
+    //    int total_elementos = 0;
+    //    do{
+    //        total_elementos++;
+    //        buffer = buffer.getProximo();
+    //    } while( buffer != this.ultimo_elemento );
+    //    return total_elementos;
+    //}
     @Override
     public String toString() {
         if ( this.ultimo_elemento == null ) {

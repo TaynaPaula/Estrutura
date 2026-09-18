@@ -7,6 +7,7 @@ public class CircularDuplaController {
         super();
     }
 
+
     public String teste() throws Exception{
         CircularDupla lista = new CircularDupla();
 
@@ -15,6 +16,7 @@ public class CircularDuplaController {
         lista.append( 3 );
 
         lista.remove( lista.getLast().getProximo() );
+            int total = lista.getTotalNos()//
 
         return lista.toString();
     }
